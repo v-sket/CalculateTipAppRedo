@@ -24,8 +24,8 @@
         android:id="@+id/tvBaseAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="11dp"
         android:text="Base"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="22sp"
@@ -39,12 +39,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textStyle="bold"
-        android:textSize="22sp"
         android:text="15%"
-        app:layout_constraintTop_toBottomOf="@+id/tvBaseAmount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/tvBaseAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tvBaseAmount"
         tools:ignore="HardcodedText" />
 
     <TextView
@@ -52,25 +52,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textStyle="bold"
-        android:textSize="22sp"
         android:text="Tip"
-        app:layout_constraintTop_toBottomOf="@+id/tvTipPercent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/tvBaseAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipPercent"
         tools:ignore="HardcodedText" />
-    
+
     <TextView
         android:id="@+id/tvTotalAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textStyle="bold"
-        android:textSize="22sp"
         android:text="Total"
-        app:layout_constraintTop_toBottomOf="@+id/tvTipAmount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/tvBaseAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipAmount"
         tools:ignore="HardcodedText" />
 
     <EditText
@@ -80,11 +80,11 @@
         android:layout_marginStart="60dp"
         android:ems="12"
         android:hint="Bill Amount"
+        android:inputType="number"
         android:textColorHint="#A1887F"
         android:textSize="22sp"
         app:layout_constraintStart_toEndOf="@+id/tvBaseAmount"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-        android:inputType="number"
         tools:ignore="Autofill,HardcodedText" />
 
     <SeekBar
@@ -93,33 +93,33 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:max="30"
-        app:layout_constraintTop_toBottomOf="@+id/etBaseAmount"
-        app:layout_constraintStart_toStartOf="@+id/etBaseAmount" />
+        app:layout_constraintStart_toStartOf="@+id/etBaseAmount"
+        app:layout_constraintTop_toBottomOf="@+id/etBaseAmount" />
 
     <TextView
         android:id="@+id/tvTipAmountResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:text="12.1"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:text="12.1"
-        app:layout_constraintTop_toBottomOf="@+id/sbTipPercent"
         app:layout_constraintStart_toStartOf="@+id/etBaseAmount"
+        app:layout_constraintTop_toBottomOf="@+id/sbTipPercent"
         tools:ignore="HardcodedText" />
-    
+
     <TextView
         android:id="@+id/tvTotalAmountResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:text="12.1"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:text="12.1"
-        app:layout_constraintTop_toBottomOf="@+id/tvTipAmountResult"
         app:layout_constraintStart_toStartOf="@+id/etBaseAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipAmountResult"
         tools:ignore="HardcodedText" />
 
     <TextView
@@ -129,11 +129,11 @@
         android:layout_marginTop="250dp"
         android:text="© Android Studio 2023"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/tvTotalAmountResult"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalAmountResult"
         tools:ignore="HardcodedText" />
-    
+
     <TextView
         android:id="@+id/tvCreator"
         android:layout_width="wrap_content"
