@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:text="Calculate Tip App"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvBaseAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="50dp"
+        android:text="Base"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvTipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="15%"
+        app:layout_constraintTop_toBottomOf="@+id/tvBaseAmount"
+        app:layout_constraintEnd_toEndOf="@+id/tvBaseAmount"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Tip"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipPercent"
+        app:layout_constraintEnd_toEndOf="@+id/tvBaseAmount"
+        tools:ignore="HardcodedText" />
+    
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Total"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipAmount"
+        app:layout_constraintEnd_toEndOf="@+id/tvBaseAmount"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etBaseAmount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:ems="12"
+        android:hint="Bill Amount"
+        android:textColorHint="#A1887F"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/tvBaseAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:inputType="number"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <SeekBar
+        android:id="@+id/sbTipPercent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:max="30"
+        app:layout_constraintTop_toBottomOf="@+id/etBaseAmount"
+        app:layout_constraintStart_toStartOf="@+id/etBaseAmount" />
+
+    <TextView
+        android:id="@+id/tvTipAmountResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="12.1"
+        app:layout_constraintTop_toBottomOf="@+id/sbTipPercent"
+        app:layout_constraintStart_toStartOf="@+id/etBaseAmount"
+        tools:ignore="HardcodedText" />
+    
+    <TextView
+        android:id="@+id/tvTotalAmountResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="12.1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipAmountResult"
+        app:layout_constraintStart_toStartOf="@+id/etBaseAmount"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="© Android Studio 2023"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalAmountResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText" />
+    
+    <TextView
+        android:id="@+id/tvCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Just Vy (v-sket)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCopyright"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
