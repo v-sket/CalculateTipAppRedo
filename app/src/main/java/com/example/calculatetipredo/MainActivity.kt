@@ -102,13 +102,7 @@ class MainActivity : AppCompatActivity() {
             in 0..4 -> tvDescription.setTextColor(ContextCompat.getColor(this, R.color.red))
             in 5..9 -> tvDescription.setTextColor(ContextCompat.getColor(this, R.color.orange))
             in 10..14 -> tvDescription.setTextColor(ContextCompat.getColor(this, R.color.yellow))
-            in 15..19 -> tvDescription.setTextColor(
-                ContextCompat.getColor(
-                    this,
-                    R.color.yellowGreen
-                )
-            )
-
+            in 15..19 -> tvDescription.setTextColor(ContextCompat.getColor(this, R.color.yellowGreen))
             else -> tvDescription.setTextColor(ContextCompat.getColor(this, R.color.green))
         }
     }
