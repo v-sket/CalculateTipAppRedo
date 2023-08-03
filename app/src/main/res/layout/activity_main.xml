@@ -8,14 +8,14 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:fontFamily="serif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="serif"
         android:paddingTop="25dp"
         android:paddingBottom="25dp"
         android:text="Calculate Tip App"
-        android:textStyle="bold"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -98,44 +98,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        tools:text="12.1"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/etBaseAmount"
         app:layout_constraintTop_toBottomOf="@+id/sbTipPercent"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        tools:text="12.1" />
 
     <TextView
         android:id="@+id/tvTotalAmountResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        tools:text="12.1"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/etBaseAmount"
         app:layout_constraintTop_toBottomOf="@+id/tvTipAmountResult"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        tools:text="12.1" />
 
     <TextView
         android:id="@+id/tvDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed-medium"
         android:layout_marginTop="150dp"
-        tools:text="description"
-        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTotalAmountResult" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalAmountResult"
+        tools:text="description" />
 
     <TextView
         android:id="@+id/tvCopyright"
-        android:fontFamily="sans-serif-condensed-medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="© Android Studio 2023"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -145,10 +145,10 @@
 
     <TextView
         android:id="@+id/tvCreator"
-        android:fontFamily="sans-serif-condensed-medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Just Vy (v-sket)"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

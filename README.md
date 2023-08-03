@@ -17,13 +17,16 @@ Time spend:
 
 ### App Functionality:
 
-* [x] User enters base amount, drags bar of tip percent and the app will automatically compute tip amount and total amount
-* [x] User drags the tip percent bar, the app will automatically display message based on the percent
-* [x] User drags the tip percent bar, the app will automatically display the according percentage 
+* [x] User enters base amount, drags bar of tip percent and the app will automatically compute tip
+  amount and total amount
+* [x] User drags the tip percent bar, the app will automatically display message based on the
+  percent
+* [x] User drags the tip percent bar, the app will automatically display the according percentage
 
 ### Extensions being used:
 
-* [x] User drags the tip percent bar, the app will automatically display message with color based on the percentage
+* [x] User drags the tip percent bar, the app will automatically display message with color based on
+  the percentage
 
 ## Notes
 
